@@ -1,4 +1,4 @@
-# Name: Kelly de Vries
+# Name: Triangle Checker
 # Date: 4.10.15
 
 Description: This web app will evaluate the user-inputted side-lengths of a triangle to determine if it is a triangle, then return whether the triangle is equilateral, isosceles, or scalene.
