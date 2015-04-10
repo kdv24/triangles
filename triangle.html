@@ -10,12 +10,21 @@
   <body>
     <div class="container">
       <h1>Triangle Checker</h1>
-        <form id="user-input">
-          <input type="text" id="length1" name="length1" placeholder="enter the 1st side of your triangle">
-          <input type="text" id="length2" name="length2" placeholder="enter the 2nd side of your triangle">
-          <input type="text" id="length3" name="length3" placeholder="enter the 3rd side of your triangle">
-          <button type="submit">Check your triangle</button>
+      <div class="container-fluid">
+        <form id="user-input" class="form-group">
+          <input type="text" id="length1" name="length1" placeholder="enter the 1st side of your triangle" autofocus="autofocus" class="form-control">
+        </br>
+          <input type="text" id="length2" name="length2" placeholder="enter the 2nd side of your triangle" autofocus="autofocus" class="form-control">
+        </br>
+          <input type="text" id="length3" name="length3" placeholder="enter the 3rd side of your triangle" autofocus="autofocus" class="form-control">
+        </br>
+          <button class="btn btn-warning" type="submit">Check your triangle</button>
         </form>
+      </div>
+
+      <div id="hidden">
+        <h3>Your triangle is <span class="result"></span> triangle.</h3>
+      </div>
 
   </body>
 </html>

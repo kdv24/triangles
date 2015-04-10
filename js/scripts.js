@@ -10,24 +10,29 @@ var triangleChecker = function(length1, length2, length3){
     (length2 + length3) < length1 ||
     (length3 + length1) < length2
     ) {
-    return "not a triangle";
+    return "not";
     }
   else if ((length1 !== length2) && (length2 !== length3) && (length3 !== length1)){
-    return "scalene";
+    return "a scalene";
     }
   else if((length1 === length2) && (length2 === length3)){
-    return "equilateral";
+    return "an equilateral";
     } else {
-    return "isosceles";
+    return "an isosceles";
     }
 };
 
 $(document).ready(function() {
-  $("#user-input form").submit(function(event){
+  $("form#user-input").submit(function(event){
     var length1 = parseInt($("input#length1").val());
     var length2 = parseInt($("input#length2").val());
     var length3 = parseInt($("input#length3").val());
     var result = triangleChecker(length1, length2, length3);
+
+    $(".result").text(result);
+
+
+    $("#hidden").show();
 
     event.preventDefault();
   });
