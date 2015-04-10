@@ -5,6 +5,7 @@ Description: This web app will evaluate the user-inputted side-lengths of a tria
 
 # SetUp and Use
 1. Simply open triangle.html in a browser window and enter the lengths of the sides of the triangle you would like to have evaluated.
+2. If you want to try the program with the array and loop code instead, simply comment out scripts.js at line 7 - line 40 and un-comment lines 45 - line 64.  Either code will work.
 
 # Copyright (c) 2015 (Kelly de Vries)
 
