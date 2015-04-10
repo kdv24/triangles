@@ -1,4 +1,14 @@
 //check to see if lengths can combine to be valid triangle or not
+var triangleChecker = function(length1, length2, length3){
+    if (
+        (length1 + length2) > length3 ||
+        (length2 + length3) > length1 ||
+        (length3 + length1) > length2
+        ) {
+            return "not a triangle";
+        }
+
+};
 
 //if no, then return a message indicating that the numbers they entered do not create a triangle
 
