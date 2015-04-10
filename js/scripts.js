@@ -4,13 +4,13 @@
 //if not, then check to see if three sides are equal and return "equilateral"
 //if not, then return "isosceles"
 
-var triangleChecker = function(length1, length2, length3){
+function triangleChecker(length1, length2, length3){
   if (
     (length1 + length2) < length3 ||
     (length2 + length3) < length1 ||
     (length3 + length1) < length2
     ) {
-    return "not";
+    return "not a";
     }
   else if ((length1 !== length2) && (length2 !== length3) && (length3 !== length1)){
     return "a scalene";
@@ -37,3 +37,19 @@ $(document).ready(function() {
     event.preventDefault();
   });
 });
+
+
+
+/************************playing around with arrays & for loops now************************/
+
+function triangleChecker2(l1, l2, l3){
+    var sides = [l1, l2, l3];
+    for (i = (sides.length-1); i > -1; i--){
+        if ((sides[i] === sides[i-1]) && (sides[i-1] === sides[i-2])){
+            return "an equilateral";
+        }
+        else if ((sides[i] !== sides[i-1]) && (sides[i-1] !== sides[i-2])){
+            return "not a";
+        }
+    }
+};
