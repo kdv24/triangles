@@ -1,15 +1,15 @@
-# Name:
-# Date:
+# Name: Kelly de Vries
+# Date: 4.10.15
 
-Description:
+Description: This web app will evaluate the user-inputted side-lengths of a triangle and return whether the triangle is equilateral, isosceles, or scalene.
 
 # SetUp and Use
 In order to use this program you will need a browser...NOT IE!
 
 SetUp
-1.
+1. Simply open the triangle.html in a browser window and enter the lengths of the sides of the triangle you would like to have evaluated.
 
-# Copyright (c) 2015 (Name)
+# Copyright (c) 2015 (Kelly de Vries)
 
 # The MIT License (MIT)
 
